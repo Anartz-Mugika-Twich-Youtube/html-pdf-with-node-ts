@@ -1,9 +1,8 @@
 import pdf, { CreateOptions } from "html-pdf";
+import fs from 'fs';
 
-const content = `
-<h1>Título en el PDF creado con el paquete html-pdf</h1>
-<p>Generando un PDF con un HTML sencillo</p>
-`;
+var html = fs.readFileSync('./templates/tpl-1.html', 'utf8');
+
 
 const options: CreateOptions = {
   format: "A4", // allowed units: A3, A4, A5, Legal, Letter, Tabloid
@@ -17,8 +16,8 @@ const options: CreateOptions = {
 };
 
 pdf
-  .create(content, options)
-  .toFile("./pdf/4-example-a4-p-border-top-50.pdf", function (err, res) {
+  .create(html, options)
+  .toFile("./pdf/6-a4-p-border-top-50-title-blue.pdf", function (err, res) {
     if (err) {
       console.log(err);
     } else {
