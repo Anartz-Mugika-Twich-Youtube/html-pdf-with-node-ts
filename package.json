@@ -13,7 +13,8 @@
   "author": "Anartz Mugika Ledo <mugan86@gmail.com> (twitter.com/mugan86)",
   "license": "MIT",
   "dependencies": {
-    "html-pdf": "^3.0.1"
+    "html-pdf": "^3.0.1",
+    "typescript": "^4.2.4"
   },
   "devDependencies": {
     "ts-node": "^9.1.1"
