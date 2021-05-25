@@ -15,7 +15,7 @@ const options: CreateOptions = {
 const data: any = { baked_good: "bar", users: [
     {username: 'Anartz', age: 35}, {username: 'Prueba', age: 33}
 ],  characters: api_data};
-Twig.renderFile("./src/templates/tpl-1.twig", data, (_, html) => {
+Twig.renderFile("./src/templates/tpl-2.twig", data, (_, html) => {
   console.log(html);
   html; // compiled string
   pdf

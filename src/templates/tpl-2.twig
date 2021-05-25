@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Breaking Bad Characters</title>
+    <style>
+      h1 {
+        color: rgb(211, 28, 28);
+        text-decoration: underline;
+      }
+      img {
+          width: 30px;
+          height: 30px;
+      }
+      table{
+        border: 1px solid #333
+      }
+    </style>
+  </head>
+  <body>
+    <h1>API Breaking Bad</h1>
+    <table class="table table-bordered mt-4">
+        <tr class="table-primary">
+          <th>Personaje</th>
+          <th>Nacimiento</th>
+          <th>Estado</th>
+          <th>Nickname</th>
+          <th>Foto</th>
+        </tr>
+        {% for c in characters %}
+        <tr>
+          <th>{{c.name}}</th>
+          <td>{{c.birthday}}</td>
+          <td>{{c.status}}</td>
+          <td>{{c.nickname}}</td>
+          <td><img src="{{c.img}}" /></td>
+        </tr>
+        {% endfor %}
+      </table>
+  </body>
+</html>
