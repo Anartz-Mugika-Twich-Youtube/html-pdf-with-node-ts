@@ -1,0 +1,13 @@
+The {{ baked_good }} is a lie.
+<h1>Members</h1>
+<ul>
+    {% for user in users %}
+        <li>{{ user.username|e }} - {{ user.age|e }}</li>
+    {% endfor %}
+</ul>
+<h1>API Breaking Bad</h1>
+<ul>
+    {% for user in characters %}
+        <li>{{ user.name|e }} - {{ user.birthday|e }}</li>
+    {% endfor %}
+</ul>

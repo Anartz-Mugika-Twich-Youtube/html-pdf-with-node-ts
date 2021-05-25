@@ -13,11 +13,14 @@
   "author": "Anartz Mugika Ledo <mugan86@gmail.com> (twitter.com/mugan86)",
   "license": "MIT",
   "dependencies": {
+    "handlebars": "^4.7.7",
     "html-pdf": "^3.0.1",
+    "twig": "^1.15.4",
     "typescript": "^4.2.4"
   },
   "devDependencies": {
     "@types/html-pdf": "^2.2.0",
+    "@types/twig": "^1.12.5",
     "ts-node": "^9.1.1"
   }
 }
